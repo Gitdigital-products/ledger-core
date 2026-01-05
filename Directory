@@ -1,0 +1,44 @@
+gitdigital-ledger-core/
+├── Cargo.toml
+├── .gitignore
+├── README.md
+├── .env.example
+├── src/
+│   ├── main.rs
+│   ├── lib.rs
+│   ├── core/
+│   │   ├── mod.rs
+│   │   ├── ledger.rs
+│   │   ├── event.rs
+│   │   ├── transaction.rs
+│   │   └── hash_chain.rs
+│   ├── storage/
+│   │   ├── mod.rs
+│   │   ├── append_only.rs
+│   │   ├── blockchain.rs
+│   │   └── merkle_tree.rs
+│   ├── compliance/
+│   │   ├── mod.rs
+│   │   ├── rules_engine.rs
+│   │   ├── audit.rs
+│   │   └── validator.rs
+│   ├── api/
+│   │   ├── mod.rs
+│   │   ├── routes.rs
+│   │   ├── middleware.rs
+│   │   └── handlers.rs
+│   └── utils/
+│       ├── mod.rs
+│       ├── crypto.rs
+│       ├── timestamp.rs
+│       └── serialization.rs
+├── tests/
+│   ├── integration_tests.rs
+│   ├── ledger_tests.rs
+│   └── compliance_tests.rs
+├── config/
+│   ├── config.yaml
+│   └── compliance_rules.yaml
+└── scripts/
+    ├── deploy.sh
+    └── backup.sh
