@@ -1,0 +1,58 @@
+
+## config/compliance_rules.yaml
+
+```yaml
+rule_sets:
+  default:
+    - AMOUNT_LIMIT
+    - SANCTIONED_COUNTRIES
+    - VELOCITY_CHECK
+  
+  strict:
+    - AMOUNT_LIMIT
+    - SANCTIONED_COUNTRIES
+    - VELOCITY_CHECK
+    - PATTERN_DETECTION
+    - PEP_CHECK
+
+rules:
+  AMOUNT_LIMIT:
+    enabled: true
+    severity: ERROR
+    parameters:
+      USD: 1000000
+      EUR: 850000
+      GBP: 750000
+    
+  SANCTIONED_COUNTRIES:
+    enabled: true
+    severity: CRITICAL
+    parameters:
+      countries:
+        - CU
+        - IR
+        - KP
+        - SY
+        - RU
+    
+  VELOCITY_CHECK:
+    enabled: true
+    severity: WARNING
+    parameters:
+      max_transactions_per_hour: 100
+      max_amount_per_day:
+        USD: 50000
+    
+  PATTERN_DETECTION:
+    enabled: false
+    severity: WARNING
+    parameters:
+      round_amounts: true
+      rapid_succession: true
+      
+  PEP_CHECK:
+    enabled: true
+    severity: CRITICAL
+    parameters:
+      data_source: "internal_pep_list"
+      auto_escalate: true
