@@ -1,0 +1,2 @@
+docker build -t gitdigital-ledger .
+docker run -p 3000:3000 gitdigital-ledger
