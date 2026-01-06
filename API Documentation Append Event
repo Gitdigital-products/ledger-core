@@ -1,0 +1,15 @@
+POST /events
+Content-Type: application/json
+
+{
+  "event": {
+    "event_type": "financial_transaction",
+    "transaction_id": "tx_123",
+    "from_account": "acc_001",
+    "to_account": "acc_002",
+    "amount": {
+      "amount": "1000.00",
+      "currency_code": "USD"
+    }
+  }
+}
