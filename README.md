@@ -1,4 +1,4 @@
-```markdown
+markdown
 <!-- Security Badges -->
 ![Security Foundational](https://img.shields.io/badge/security-foundational-blue)
 
@@ -7,8 +7,8 @@
 
 <!-- Technology Badges -->
 ![License](https://img.shields.io/badge/license-MIT-yellow)
-```
-```markdown
+
+markdown
 <!-- Security Badges -->
 ![Security Foundational](https://img.shields.io/badge/security-foundational-blue)
 ![Security Scanning](https://img.shields.io/badge/security-scanning-inactive-red)
@@ -25,7 +25,7 @@
 
 <!-- Community Badges -->
 ![Governance](https://img.shields.io/badge/governance-partial-orange)
-```
+
 
 
 **Core Badge Verification Workflow** (`.github/workflows/badge-verification.yml`):
@@ -71,7 +71,7 @@ jobs:
 ```
 
 
-```markdown
+markdown
 <!-- Security Badges -->
 ![Security Foundational](https://img.shields.io/badge/security-foundational-blue)
 
@@ -80,7 +80,7 @@ jobs:
 
 <!-- Technology Badges -->
 ![License](https://img.shields.io/badge/license-MIT-yellow)
-```
+
 
 
 ```markdown
@@ -88,7 +88,7 @@ jobs:
 ![Security Foundational](https://img.shields.io/badge/security-foundational-blue)
 ![Security Scanning](https://img.shields.io/badge/security-scanning-active-green)
 ![Dependency Status](https://img.shields.io/badge/deps-up--to--date-brightgreen)
-
+```
 <!-- Activity Badges -->
 ![Last Commit](https://img.shields.io/badge/commit-recent-yellow)
 ![Issues Health](https://img.shields.io/badge/issues-healthy-brightgreen)
@@ -110,7 +110,7 @@ jobs:
 
 <!-- Community Badges -->
 ![License](https://img.shields.io/badge/license-MIT-yellow)
-```
+``
 
 
 # ledger-core
